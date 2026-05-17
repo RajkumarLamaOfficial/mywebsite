@@ -1,47 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home - Cloud Computing Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lama Raj Kumar | KDU</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="page">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
 
-    <nav>
-        <h2>Lama Raj Kumar</h2>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+  <nav class="nav" id="nav">
+    <div class="nav-logo">LRK</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section section--home active">
+    <div class="home-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="home-content">
+      <div class="home-badge">☁ Cloud Computing Project</div>
+      <h1 class="home-title">
+        <span class="line">Lama</span>
+        <span class="line accent">Raj Kumar</span>
+      </h1>
+      <p class="home-sub">Student at KDU · ID <strong>2417096</strong></p>
+      <p class="home-desc">Exploring the intersection of cloud infrastructure, distributed systems, and modern web technologies.</p>
+      <div class="home-actions">
+        <button class="btn btn--primary" onclick="navigateTo('about')">Discover More</button>
+        <button class="btn btn--ghost" onclick="navigateTo('contact')">Get in Touch</button>
+      </div>
+      <div class="home-stats">
+        <div class="stat"><span class="stat-num">2024</span><span class="stat-label">Enrolled</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">KDU</span><span class="stat-label">Institute</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">☁</span><span class="stat-label">Cloud Focus</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section--about">
+    <div class="about-bg">
+      <div class="orb orb-a1"></div>
+      <div class="orb orb-a2"></div>
+    </div>
+    <div class="section-header">
+      <span class="section-tag">01 / About</span>
+      <h2 class="section-title">Who Am I</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card card-profile">
+        <div class="profile-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">LRK</div>
         </div>
-    </nav>
-
-    <section class="hero">
-        <h1>Welcome to My Cloud Website</h1>
-        <p>This website is hosted online using GitHub Pages for my Cloud Computing project.</p>
-        <a class="btn" href="about.html">Learn More</a>
-    </section>
-
-    <section class="cards">
-        <div class="card">
-            <h3>Cloud Hosting</h3>
-            <p>Website deployed using GitHub Pages.</p>
+        <h3>Lama Raj Kumar</h3>
+        <p>Cloud Computing Student</p>
+        <div class="profile-tags">
+          <span>Cloud</span><span>Networking</span><span>Web Dev</span>
         </div>
-
-        <div class="card">
-            <h3>Responsive Design</h3>
-            <p>Clean layout with modern styling.</p>
+      </div>
+      <div class="about-card card-info">
+        <h3 class="card-title">Student Details</h3>
+        <ul class="info-list">
+          <li><span class="info-icon">🎓</span><div><span class="info-label">Institute</span><span class="info-val">KDU</span></div></li>
+          <li><span class="info-icon">🪪</span><div><span class="info-label">Student ID</span><span class="info-val">2417096</span></div></li>
+          <li><span class="info-icon">📧</span><div><span class="info-label">Email</span><span class="info-val">raj126@gmail.com</span></div></li>
+          <li><span class="info-icon">📱</span><div><span class="info-label">Phone</span><span class="info-val">010-0000-0000</span></div></li>
+        </ul>
+      </div>
+      <div class="about-card card-skills">
+        <h3 class="card-title">Cloud Skills</h3>
+        <div class="skill-bars">
+          <div class="skill-item"><div class="skill-meta"><span>Cloud Architecture</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-item"><div class="skill-meta"><span>Networking</span><span>78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+          <div class="skill-item"><div class="skill-meta"><span>Web Development</span><span>72%</span></div><div class="skill-bar"><div class="skill-fill" data-w="72"></div></div></div>
+          <div class="skill-item"><div class="skill-meta"><span>Database Systems</span><span>65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
         </div>
+      </div>
+      <div class="about-card card-quote">
+        <div class="quote-mark">"</div>
+        <p>Building tomorrow's cloud infrastructure, one project at a time. Passionate about scalable systems and distributed computing.</p>
+        <span class="quote-author">— Lama Raj Kumar</span>
+      </div>
+    </div>
+  </section>
 
-        <div class="card">
-            <h3>Student Project</h3>
-            <p>Created for Cloud Computing practical work.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="contact-bg">
+      <div class="orb orb-c1"></div>
+      <div class="orb orb-c2"></div>
+    </div>
+    <div class="section-header">
+      <span class="section-tag">02 / Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <p class="contact-intro">Have a project or question? Reach out — I'm always open to collaboration and new ideas in cloud computing.</p>
+        <div class="contact-cards">
+          <div class="contact-card"><div class="cc-icon">✉</div><div><span class="cc-label">Email</span><a href="mailto:raj126@gmail.com" class="cc-val">raj126@gmail.com</a></div></div>
+          <div class="contact-card"><div class="cc-icon">📞</div><div><span class="cc-label">Phone</span><span class="cc-val">010-0000-0000</span></div></div>
+          <div class="contact-card"><div class="cc-icon">🏫</div><div><span class="cc-label">Institute</span><span class="cc-val">KDU</span></div></div>
+          <div class="contact-card"><div class="cc-icon">🪪</div><div><span class="cc-label">Student ID</span><span class="cc-val">2417096</span></div></div>
         </div>
-    </section>
+      </div>
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Doe" required /></div>
+          <div class="form-group"><label>Your Email</label><input type="email" placeholder="john@example.com" required /></div>
+        </div>
+        <div class="form-group"><label>Subject</label><input type="text" placeholder="Cloud Computing Collaboration..." required /></div>
+        <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Write your message here..." required></textarea></div>
+        <button type="submit" class="btn btn--primary btn--full"><span class="btn-text">Send Message</span><span class="btn-icon">→</span></button>
+        <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+      </form>
+    </div>
+  </section>
 
-</div>
+  <footer class="footer">
+    <p>© 2024 Lama Raj Kumar · KDU Student <span>2417096</span> · Cloud Computing Project</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
