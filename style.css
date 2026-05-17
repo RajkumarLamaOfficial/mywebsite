@@ -7,23 +7,3 @@ body{
     background-position: center;
     min-height: 100vh;
 }
-
-h1{
-    color: blue;
-}
-
-p{
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav a{
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
