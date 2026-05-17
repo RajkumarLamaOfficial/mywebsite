@@ -1,16 +1,28 @@
-Create style.css
 body{
-font-family: Arial;
-text-align: center;
-background-color: #f2f2f2;
+    font-family: Arial;
+    text-align: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
 }
 
 h1{
-color: blue;
+    color: yellow;
+}
+
+nav{
+    margin-top: 20px;
 }
 
 nav a{
-margin: 10px;
-text-decoration: none;
-font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
 }
