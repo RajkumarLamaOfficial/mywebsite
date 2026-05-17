@@ -2,74 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Cloud Computing Lab</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="nav">
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <div class="nav-brand">
-      <span class="nav-logo">☁ Cloud Lab</span>
-      <span class="nav-uni">KDU</span>
+      <span class="nav-title">&#9729; Cloud Lab</span>
+      <span class="nav-badge">KDU</span>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-menu">
       <li><a href="index.html" class="nav-link active">Home</a></li>
       <li><a href="about.html" class="nav-link">About</a></li>
       <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="hosted-bar">✦ Hosted on GitHub Pages</div>
+  <!-- HOSTED BAR -->
+  <div class="hosted-bar">&#10022; Hosted on GitHub Pages</div>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Your Gateway to<br><span class="gradient-text">Modern Cloud</span></h1>
-      <p class="hero-sub">A hands-on cloud computing lab exploring hosting, virtualization, and deployment on real-world cloud platforms.</p>
-      <div class="hero-btns">
-        <a href="about.html" class="btn btn-primary">Explore the Lab →</a>
+    <div class="hero-inner">
+      <h1 class="hero-heading">Your Gateway to<br /><span class="hero-highlight">Modern Cloud</span></h1>
+      <p class="hero-desc">A hands-on cloud computing lab exploring hosting, virtualization, and deployment on real-world cloud platforms.</p>
+      <div class="btn-group">
+        <a href="about.html" class="btn btn-blue">Explore the Lab &rarr;</a>
         <a href="contact.html" class="btn btn-outline">Meet the Creator</a>
       </div>
     </div>
 
-    <div class="stats-row">
-      <div class="stat-box"><span class="stat-n">3+</span><span class="stat-l">Live Pages</span></div>
-      <div class="stat-box"><span class="stat-n">1</span><span class="stat-l">Creator</span></div>
-      <div class="stat-box"><span class="stat-n">100%</span><span class="stat-l">Cloud Hosted</span></div>
-      <div class="stat-box"><span class="stat-n">2026</span><span class="stat-l">Project Year</span></div>
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Live Pages</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Creator</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Cloud Hosted</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">2026</span>
+        <span class="stat-label">Project Year</span>
+      </div>
     </div>
   </section>
 
   <!-- FEATURES -->
-  <section class="features">
-    <div class="features-header">
-      <p class="section-tag">What We Cover</p>
-      <h2>Practical Cloud Skills</h2>
-    </div>
-    <div class="cards-grid">
-      <div class="card"><div class="card-icon">☁</div><h3>Cloud Fundamentals</h3><p>Understand IaaS, PaaS, and SaaS layers, data centers, and how cloud infrastructure powers modern applications.</p></div>
-      <div class="card"><div class="card-icon">💻</div><h3>Hands-On Deployment</h3><p>Deploy real websites and applications to cloud platforms with live experiments and step-by-step workflows.</p></div>
-      <div class="card"><div class="card-icon">🌐</div><h3>Web Hosting</h3><p>Learn how static and dynamic sites are hosted, served globally via CDN, and scaled to handle real traffic.</p></div>
-      <div class="card"><div class="card-icon">🔒</div><h3>Security Basics</h3><p>Explore cloud security principles including HTTPS, access control, and protecting deployed applications.</p></div>
-      <div class="card"><div class="card-icon">⚡</div><h3>Virtualization</h3><p>See how virtual machines and containers like Docker abstract hardware and power modern cloud infrastructure.</p></div>
-      <div class="card"><div class="card-icon">📊</div><h3>Monitoring & Scaling</h3><p>Understand how cloud apps are monitored, auto-scaled, and optimized for performance and cost.</p></div>
+  <section class="section">
+    <div class="section-label">What We Cover</div>
+    <h2 class="section-title">Practical Cloud Skills</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">&#9729;</div>
+        <h3>Cloud Fundamentals</h3>
+        <p>Understand IaaS, PaaS, and SaaS layers, data centers, and how cloud infrastructure powers modern applications.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128187;</div>
+        <h3>Hands-On Deployment</h3>
+        <p>Deploy real websites and applications to cloud platforms with live experiments and step-by-step workflows.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127760;</div>
+        <h3>Web Hosting</h3>
+        <p>Learn how static and dynamic sites are hosted, served globally via CDN, and scaled to handle real traffic.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128274;</div>
+        <h3>Security Basics</h3>
+        <p>Explore cloud security principles including HTTPS, access control, and protecting deployed applications.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#9889;</div>
+        <h3>Virtualization</h3>
+        <p>See how virtual machines and containers like Docker abstract hardware and power modern cloud infrastructure.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128202;</div>
+        <h3>Monitoring &amp; Scaling</h3>
+        <p>Understand how cloud apps are monitored, auto-scaled, and optimized for performance and cost.</p>
+      </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta-section">
     <h2>Ready to Dive In?</h2>
     <p>Explore the lab details or get in touch with the creator.</p>
-    <div class="hero-btns">
-      <a href="about.html" class="btn btn-primary">Learn More</a>
+    <div class="btn-group centered">
+      <a href="about.html" class="btn btn-blue">Learn More</a>
       <a href="contact.html" class="btn btn-outline">Contact Us</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Cloud Computing Practical Lab · KDU · Hosted on GitHub Pages</p>
+    <p>&copy; 2026 Cloud Computing Practical Lab &middot; KDU &middot; Hosted on GitHub Pages</p>
   </footer>
 
 </body>
