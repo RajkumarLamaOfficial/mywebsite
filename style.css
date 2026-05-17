@@ -1,11 +1,7 @@
 body{
     font-family: Arial;
     text-align: center;
-    background-image: url("bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+    background-color: white;
 }
 
 h1{
@@ -15,11 +11,6 @@ h1{
 p{
     color: black;
     font-size: 20px;
-    font-weight: bold;
-}
-
-nav{
-    margin-top: 20px;
 }
 
 nav a{
@@ -27,7 +18,4 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
 }
