@@ -1,9 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: Arial;
-    text-align: center;
-    background-image: url("bg.png");
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("bg.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
+    color: white;
+}
+
+.page{
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+}
+
+nav h2{
+    color: #00c3ff;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00c3ff;
+}
+
+.hero{
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.hero h1{
+    font-size: 48px;
+    color: #00c3ff;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background: #00c3ff;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.25);
+}
+
+.card h3{
+    color: #00c3ff;
+    margin-bottom: 10px;
+}
+
+.content{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.content h1{
+    font-size: 42px;
+    color: #00c3ff;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info-box{
+    background: rgba(255,255,255,0.15);
+    width: 400px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+@media(max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
 }
