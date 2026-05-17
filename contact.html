@@ -2,73 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Cloud Computing Lab</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="nav">
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <div class="nav-brand">
-      <span class="nav-logo">☁ Cloud Lab</span>
-      <span class="nav-uni">KDU</span>
+      <span class="nav-title">&#9729; Cloud Lab</span>
+      <span class="nav-badge">KDU</span>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-menu">
       <li><a href="index.html" class="nav-link">Home</a></li>
       <li><a href="about.html" class="nav-link">About</a></li>
       <li><a href="contact.html" class="nav-link active">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- PAGE HEADER -->
   <div class="page-header">
-    <div class="breadcrumb">Home → Contact</div>
+    <div class="breadcrumb">Home &rarr; Contact</div>
     <h1>Contact</h1>
     <p>This project was built and deployed by Lama Raj Kumar as part of the Cloud Computing Practical course at KDU.</p>
   </div>
 
-  <!-- INFO CARDS -->
-  <section class="contact-section">
-    <div class="contact-top">
-      <div class="contact-info-box">
-        <p class="section-tag">Project Info</p>
-        <h2>Get In Touch</h2>
-        <p style="color:var(--text-dim); margin-bottom:32px;">This webpage was created as a university project exploring cloud computing, web hosting, and modern deployment techniques.</p>
+  <!-- CONTACT BODY -->
+  <section class="contact-body">
 
-        <div class="info-items">
-          <div class="info-item"><span class="info-icon">🎓</span><div><span class="info-label">Institution</span><span class="info-val">KDU</span></div></div>
-          <div class="info-item"><span class="info-icon">📧</span><div><span class="info-label">Email</span><span class="info-val">raj126@gmail.com</span></div></div>
-          <div class="info-item"><span class="info-icon">☁</span><div><span class="info-label">Platform</span><span class="info-val">GitHub Pages (Cloud Hosted)</span></div></div>
-          <div class="info-item"><span class="info-icon">📅</span><div><span class="info-label">Year</span><span class="info-val">2026</span></div></div>
-        </div>
+    <!-- LEFT: INFO -->
+    <div class="contact-left">
+      <div class="section-label">Project Info</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">This webpage was created as a university project exploring cloud computing, web hosting, and modern deployment techniques.</p>
 
-        <a href="about.html" class="btn btn-primary" style="margin-top:32px; display:inline-block;">View Project Details →</a>
-      </div>
-
-      <!-- CREATOR CARD -->
-      <div class="creator-card">
-        <p class="section-tag">Developer</p>
-        <h2>Project Creator</h2>
-        <div class="creator-profile">
-          <div class="creator-avatar">LRK</div>
+      <div class="info-list">
+        <div class="info-row">
+          <span class="info-icon">&#127891;</span>
           <div>
-            <h3>Lama Raj Kumar</h3>
-            <p>Web Development & Cloud Deployment</p>
+            <span class="info-label">Institution</span>
+            <span class="info-value">KDU</span>
           </div>
         </div>
-        <div class="creator-details">
-          <div class="creator-detail"><span class="detail-num">01</span><div><span class="detail-label">Course</span><span class="detail-val">Cloud Computing Practical</span></div></div>
-          <div class="creator-detail"><span class="detail-num">ID</span><div><span class="detail-label">Student ID</span><span class="detail-val">2417096</span></div></div>
-          <div class="creator-detail"><span class="detail-num">📞</span><div><span class="detail-label">Phone</span><span class="detail-val">010-0000-0000</span></div></div>
-          <div class="creator-detail"><span class="detail-num">🌐</span><div><span class="detail-label">Hosting</span><span class="detail-val">GitHub Pages</span></div></div>
-          <div class="creator-detail"><span class="detail-num">⚙</span><div><span class="detail-label">Technologies</span><span class="detail-val">HTML · CSS · Cloud</span></div></div>
+        <div class="info-row">
+          <span class="info-icon">&#128231;</span>
+          <div>
+            <span class="info-label">Email</span>
+            <span class="info-value">raj126@gmail.com</span>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">&#9729;</span>
+          <div>
+            <span class="info-label">Platform</span>
+            <span class="info-value">GitHub Pages (Cloud Hosted)</span>
+          </div>
+        </div>
+        <div class="info-row">
+          <span class="info-icon">&#128197;</span>
+          <div>
+            <span class="info-label">Year</span>
+            <span class="info-value">2026</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="about.html" class="btn btn-blue" style="display:inline-block; margin-top:32px;">View Project Details &rarr;</a>
+    </div>
+
+    <!-- RIGHT: CREATOR CARD -->
+    <div class="creator-card">
+      <div class="section-label">Developer</div>
+      <h2 class="section-title">Project Creator</h2>
+
+      <div class="creator-profile">
+        <div class="creator-avatar">LRK</div>
+        <div>
+          <p class="creator-name">Lama Raj Kumar</p>
+          <p class="creator-role">Web Development &amp; Cloud Deployment</p>
+        </div>
+      </div>
+
+      <div class="creator-details">
+        <div class="creator-row">
+          <span class="detail-num">01</span>
+          <div>
+            <span class="info-label">Course</span>
+            <span class="info-value">Cloud Computing Practical</span>
+          </div>
+        </div>
+        <div class="creator-row">
+          <span class="detail-num">ID</span>
+          <div>
+            <span class="info-label">Student ID</span>
+            <span class="info-value">2417096</span>
+          </div>
+        </div>
+        <div class="creator-row">
+          <span class="detail-num">&#128222;</span>
+          <div>
+            <span class="info-label">Phone</span>
+            <span class="info-value">010-0000-0000</span>
+          </div>
+        </div>
+        <div class="creator-row">
+          <span class="detail-num">&#127760;</span>
+          <div>
+            <span class="info-label">Hosting</span>
+            <span class="info-value">GitHub Pages</span>
+          </div>
+        </div>
+        <div class="creator-row">
+          <span class="detail-num">&#9881;</span>
+          <div>
+            <span class="info-label">Technologies</span>
+            <span class="info-value">HTML &middot; CSS &middot; Cloud</span>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Cloud Computing Practical Lab · KDU · All Rights Reserved</p>
+    <p>&copy; 2026 Cloud Computing Practical Lab &middot; KDU &middot; All Rights Reserved</p>
   </footer>
 
 </body>
